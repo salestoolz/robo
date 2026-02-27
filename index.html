@@ -36,6 +36,67 @@
       color:var(--text);
       line-height:1.5;
     }
+
+    .ai-team {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 80px;
+}
+
+.team-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.team-item img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.team-item h4 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.team-item p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Hover effect */
+.team-item:hover {
+  background: #f5f7fb;
+  transform: translateX(5px);
+}
+
+/* Highlighted (like blue glow in screenshot) */
+.team-item.highlight {
+  background: #eef4ff;
+  border: 1px solid #c7d7ff;
+}
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:18px 18px 92px}
     .spacer{height:6px}
@@ -444,11 +505,11 @@
               Try Sintra Free Today
             </a>
             <a class="btn secondary" id="ctaSecondary" href="#" rel="nofollow noopener" target="_blank">
-              💰 Save up to 30% with yearly plan • Free trial • Cancel anytime
+              💰  <span class="hglow">Save up to 30% </span>with yearly plan • Free trial • Cancel anytime
             </a>
           </div>
 
-          <div class="chips">
+          <!-- <div class="chips">
             <div class="chip"><span class="dot"></span>Role-based AI workers</div>
             <div class="chip"><span class="dot"></span>Multi-language output</div>
             <div class="chip"><span class="dot"></span>Works in your tools</div>
@@ -478,8 +539,116 @@
                 <span>Create content and handle communication across languages without hiring local teams.</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
+
+          <section class="ai-team">
+  <div class="container">
+
+    <div class="team-grid">
+
+      <!-- Left Column -->
+      <div class="team-item">
+        <img src="images/social.png" alt="">
+        <div>
+          <h4>Social Media Manager</h4>
+          <p>Soshie</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/data.png" alt="">
+        <div>
+          <h4>Data Analyst</h4>
+          <p>Dexter</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/email.png" alt="">
+        <div>
+          <h4>Email Marketer</h4>
+          <p>Emmie</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/recruiter.png" alt="">
+        <div>
+          <h4>Recruiter</h4>
+          <p>Scouty</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/ecom.png" alt="">
+        <div>
+          <h4>eCom Specialist</h4>
+          <p>Commet</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/seo.png" alt="">
+        <div>
+          <h4>SEO Mastermind</h4>
+          <p>Seomi</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+
+      <div class="team-item">
+        <img src="images/support.png" alt="">
+        <div>
+          <h4>Customer Support</h4>
+          <p>Cassie</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/business.png" alt="">
+        <div>
+          <h4>Business Strategist</h4>
+          <p>Buddy</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/growth.png" alt="">
+        <div>
+          <h4>Personal Growth</h4>
+          <p>Gigi</p>
+        </div>
+      </div>
+
+      <div class="team-item highlight">
+        <img src="images/copy.png" alt="">
+        <div>
+          <h4>Copywriter</h4>
+          <p>Penn</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/sales.png" alt="">
+        <div>
+          <h4>Sales Strategist</h4>
+          <p>Milli</p>
+        </div>
+      </div>
+
+      <div class="team-item">
+        <img src="images/va.png" alt="">
+        <div>
+          <h4>Virtual Assistant</h4>
+          <p>Vizzy</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
         </div>
 
         <div class="right">
